@@ -19,7 +19,7 @@
           <a class="nav-link active" aria-current="page" href="?pg=conteudo">Inicial</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?pg=animes">Oque é anime?</a>
+          <a class="nav-link" href="?pg=animes">O que é anime?</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
