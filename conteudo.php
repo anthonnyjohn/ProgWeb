@@ -64,3 +64,4 @@
 <a href="https://jujutsu-kaisen.fandom.com/wiki/Jujutsu_Kaisen">Site da Comunidade de Jujutsu Kaisen</a>
 </div>
 
+
