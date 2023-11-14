@@ -2,7 +2,7 @@
     
     $conn = mysqli_connect("localhost","root","");
 
-    $db = mysqli_select_db($conn,"matue");
+    $db = mysqli_select_db($conn,"anime");
 
     if($conn){
         echo "Conexão estabelecida com sucesso!";
