@@ -23,10 +23,10 @@
 <h2>Naruto é um anime baseado no mangá de mesmo nome escrito por Masashi Kishimoto. A série gira em torno das aventuras vividas por Naruto Uzumaki, um jovem órfão habitante da Aldeia da Folha que sonha em se tornar o quinto Hokage, o maior guerreiro e governante da vila.</h2>
 <a href="https://naruto.fandom.com/pt-br/wiki/Wiki_Naruto">Site da Comunidade de Naruto</a>
 </div>
-
+ 
 <br>
 <br>
-<br>
+<br>   
 <br>
 <br>
 <br>
