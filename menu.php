@@ -15,8 +15,8 @@
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="?pg=conteudo" class="nav-link active" aria-current="page">Animes</a></li>
-                <li class="nav-item"><a href="?pg=manga" class="nav-link active" aria-current="page">Mangá</a></li>
-                <li class="nav-item"><a href="?pg=sugestao" class="nav-link active" aria-current="page">Sugestão de animes!</a></li>
+                <li class="nav-item"><a href="?pg=manga" class="nav-link active" aria-current="page">Mangás</a></li>
+                <li class="nav-item"><a href="?pg=sugestao" class="nav-link active" aria-current="page">Sugestão de animes/mangás!</a></li>
             </ul>
         </header>
     </div>

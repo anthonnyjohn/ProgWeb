@@ -21,7 +21,7 @@
     <title>Fale Conosco</title>
 </head>
 <body>
-    <h1>Fale Conosco!!!</h1>
+    <h1>Fale Conosco!</h1>
     <h3>Entre em contato</h3>
 
     <form action="?pg=sucesso" method="post">

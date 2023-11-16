@@ -1,6 +1,6 @@
 <h3 style="display: flex; justify-content:center; text-align:center">
     
-Anime, animê ou animé, se refere é uma animação desenhada à mão ou por computação gráfica do Japão. Fora do Japão e em inglês, anime refere-se à animação japonesa e refere-se especificamente à animação produzida no Japão.
+"Anime" é uma forma abreviada de "animação" em japonês. No contexto global, refere-se a desenhos animados e programas de televisão de origem japonesa, caracterizados por estilos artísticos distintos e narrativas variadas, que podem abranger uma ampla gama de gêneros e públicos-alvo.
 
   
 </h3>
