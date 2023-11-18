@@ -28,6 +28,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="?pg=quemsomos">Quem somos?</a></li>
             <li><a class="dropdown-item" href="?pg=faleconosco">Fale conosco!</a></li>
+            <li><a class="dropdown-item" href="admin">ADMIN</a></li>
           </ul>
         </li>
       </ul>

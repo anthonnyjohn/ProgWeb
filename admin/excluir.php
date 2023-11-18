@@ -1,15 +1,25 @@
 <?php
-include_once("../config.inc.php");
+include "../config.inc.php";
 
-$nome = $_REQUEST['nome'];
-$img = $_REQUEST['img'];
-$url = $_REQUEST['url'];
-$sino = $_REQUEST['sino'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
-$sql = "INSERT INTO post (nome, img, url, sino)
-        VALUES ('$nome', '$img', '$url', '$sino')";
-$insert = mysqli_query($conn, $sql);
+    $excluir = "DELETE FROM post WHERE id = $id";
+    $resultado = mysqli_query($conn, $excluir);
 
+    if ($resultado) {
+        $mensagem = "Registro excluído com sucesso!";
+        $corMensagem = "#4caf50";
+    } else {
+        $mensagem = "Erro ao excluir o registro: " . mysqli_error($conn);
+        $corMensagem = "#f44336";
+    }
+} else {
+    $mensagem = "ID não fornecido para exclusão.";
+    $corMensagem = "#f44336";
+}
+
+mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +28,7 @@ $insert = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adicionar Anime</title>
+    <title>Excluir Registro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,7 +40,8 @@ $insert = mysqli_query($conn, $sql);
         div {
             max-width: 400px;
             margin: 0 auto;
-            background-color: #fff;
+            background-color: <?php echo $corMensagem; ?>;
+            color: #fff;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,15 +66,9 @@ $insert = mysqli_query($conn, $sql);
 
 <body>
     <div>
-        <?php
-        if ($insert) {
-            echo "<p>Anime adicionado com sucesso!</p>";
-            echo '<a href="../index.php">Inicial</a>';
-            echo '<a href="./listar.php">Listar</a>';
-        } else {
-            echo "<p>Anime não adicionado!</p>";
-        }
-        ?>
+        <p><?php echo $mensagem; ?></p>
+        <a href="../index.php">Inicial</a>
+        <a href="./listar.php">Listar</a>
     </div>
 </body>
 
