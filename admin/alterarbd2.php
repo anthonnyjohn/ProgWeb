@@ -10,20 +10,19 @@ if (isset($_POST['id'])) {
         $url = $_POST['url'];
         $sino = $_POST['sino'];
 
-        $sql = "UPDATE post SET nome='$nome', img='$img', url='$url', sino='$sino' WHERE id=$id";
+        $sql = "UPDATE post2 SET nome='$nome', img='$img', url='$url', sino='$sino' WHERE id=$id";
 
         if (mysqli_query($conn, $sql)) {
-            // Mensagem de sucesso estilizada
             echo '<div style="background-color: #4caf50; color: #fff; padding: 10px; margin-bottom: 10px; border-radius: 5px;">';
             echo "Dados atualizados com sucesso!";
             echo '</div>';
-            echo '<a href="../index.php" class="btn-estetico">Inicial</a> | <a href="./listar.php" class="btn-estetico">Listar</a>';
+            echo '<a href="../index.php?pg=manga" class="btn-estetico">Inicial</a> | <a href="./listar2.php" class="btn-estetico">Listar</a>';
         } else {
             echo "Erro ao atualizar os dados: " . mysqli_error($conn);
         }
     }
 
-    $consulta = "SELECT * FROM post WHERE id = $id";
+    $consulta = "SELECT * FROM post2 WHERE id = $id";
     $resultado = mysqli_query($conn, $consulta);
 
     if ($resultado && mysqli_num_rows($resultado) > 0) {
@@ -76,7 +75,6 @@ if (isset($_POST['id'])) {
                     background-color: #45a049;
                 }
 
-                /* Estilo para os botões "Inicial" e "Listar" */
                 .btn-estetico {
                     display: inline-block;
                     padding: 10px 20px;
