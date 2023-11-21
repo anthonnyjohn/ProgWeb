@@ -28,6 +28,11 @@
     <title>O Universo dos Animes: A Missão da Nossa Equipe</title>
 </head>
 
+<div>  
+<img style="align-items: center;" src="img/anime.png">
+</div>
+
+
 <body>
     <h1>O Universo dos Animes: A Missão da Nossa Equipe</h1>
 

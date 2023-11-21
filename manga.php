@@ -78,4 +78,48 @@
   </div>
 </div>
 
+<?php
+include_once("config.inc.php");
+
+
+$sql = "SELECT * FROM post2";
+$query = mysqli_query($conn, $sql);
+
+
+if ($query) {
+    
+    $animes = mysqli_fetch_all($query, MYSQLI_ASSOC);
+} else {
+    
+    echo "Erro na consulta ao banco de dados.";
+    exit();
+}
+?>
+
+<style>
+  
+  .card img {
+    max-width: 100%;
+    height: 200px;
+  }
+</style>
+
+<div class="anime-container">
+  <div class="card-container">
+    <?php
+    foreach ($animes as $anime) {
+    ?>
+      <div class="card">
+        <img src="<?php echo $anime['img']; ?>" class="card-img-top" alt="<?php echo $anime['nome']; ?>">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $anime['nome']; ?></h5>
+          <p class="card-text"><?php echo $anime['sino']; ?></p>
+          <a href="<?php echo $anime['url']; ?>" class="btn btn-primary">Saiba Mais</a>
+        </div>
+      </div>
+    <?php
+    }
+    ?>
+  </div>
+</div>
 

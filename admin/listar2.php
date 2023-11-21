@@ -14,7 +14,7 @@ function confirmaExclusao(aURL) {
 
 <?php include "../config.inc.php"; ?>
 <?php
-$busca = "SELECT * FROM post ORDER BY id";
+$busca = "SELECT * FROM post2 ORDER BY id";
 $todos = mysqli_query($conn, $busca);
 ?>
 
@@ -50,7 +50,6 @@ $todos = mysqli_query($conn, $busca);
         cursor: pointer;
     }
 
-    /* Estilo para o botão "Voltar para a Página Inicial" */
     .btn-voltar {
         display: inline-block;
         padding: 10px 20px;
@@ -80,10 +79,10 @@ $todos = mysqli_query($conn, $busca);
         <tr>
             <td><?= $sql['id']; ?></td>
             <td><?= $sql['nome']; ?></td>
-            <td><a href="alterar.php?id=<?= $sql['id']; ?>">Editar</a></td>
-            <td><a href="javascript:confirmaExclusao('excluir.php?id=<?= $sql['id']; ?>')" class="ask">Excluir</a></td>
+            <td><a href="alterar2.php?id=<?= $sql['id']; ?>">Editar</a></td>
+            <td><a href="javascript:confirmaExclusao('excluir2.php?id=<?= $sql['id']; ?>')" class="ask">Excluir</a></td>
         </tr>
     <?php } ?>
 </table>
 <br>
-<a href="../index.php" class="btn-voltar mt-3">Voltar para a Página Inicial do Anime</a>
+<a href="../index.php?pg=manga" class="btn-voltar mt-3">Voltar para a Página Inicial do Manga</a>

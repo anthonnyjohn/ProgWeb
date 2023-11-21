@@ -28,7 +28,15 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="?pg=quemsomos">Quem somos?</a></li>
             <li><a class="dropdown-item" href="?pg=faleconosco">Fale conosco!</a></li>
-            <li><a class="dropdown-item" href="admin">ADMIN</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Listar
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://localhost/progweb/admin/listar.php">Animes</a></li>
+            <li><a class="dropdown-item" href="http://localhost/progweb/admin/listar2.php">Manga</a></li>
           </ul>
         </li>
       </ul>

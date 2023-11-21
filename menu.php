@@ -16,7 +16,8 @@
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="?pg=conteudo" class="nav-link active" aria-current="page">Animes</a></li>
                 <li class="nav-item"><a href="?pg=manga" class="nav-link active" aria-current="page">Mangás</a></li>
-                <li class="nav-item"><a href="?pg=sugestao" class="nav-link active" aria-current="page">Sugestão de animes/mangás!</a></li>
+                <li class="nav-item"><a href="admin/inserir.php" class="nav-link active" aria-current="page">Adicionar Anime</a></li>
+                <li class="nav-item"><a href="admin/inserir2.php" class="nav-link active" aria-current="page">Adicionar Manga</a></li>
             </ul>
         </header>
     </div>
